@@ -15,7 +15,7 @@ public class HelloWordController {
     public ResponseEntity<String> teste() {
         return ResponseEntity.ok("Ola mundo!");
     }
-
+    @GetMapping("/parImpar")
     public ResponseEntity<String> parImpar(
             @RequestParam int numero){
         if ((numero%2)==0){
@@ -23,6 +23,8 @@ public class HelloWordController {
         }
         return ResponseEntity.ok("Impar");
     }
+
+
 
 
 }
